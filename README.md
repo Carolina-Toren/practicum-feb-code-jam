@@ -9,7 +9,7 @@
 ## Team Members
 
 1. [Carolina Toren](https://github.com/Carolina-Toren) | Web Developer
-2. [Alexandra Gritsenko]() | Web Developer
+2. [Alexandra Gritsenko](https://github.com/Sashikbear) | Web Developer
 3. [Nuriya Akhmedova ]() | Web Developer
 
 ## insert name here - About the App
