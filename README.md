@@ -6,9 +6,7 @@
 - [Technologies and Standards Used in Frontend Development](#technologies-and-standards-used-in-frontend-development)
 - [Live Demo](#live-demo)
 
-[Carolina Toren](https://github.com/Carolina-Toren) Web Developer
-[Alexandra Gritsenko]() Web Developer
-[Nuriya Akhmedova]() Web Developer
+  1.[Carolina Toren](https://github.com/Carolina-Toren) Web Developer 2.[Alexandra Gritsenko]() Web Developer 3.[Nuriya Akhmedova]() Web Developer
 
 ## insert name here - About the App
 
