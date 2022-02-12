@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../pages/playlist/playlist.css" />
+
+    <title>Playlist</title>
+  </head>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <nav class="nav">
+          <img class="header__logo" src="../../images/logo/logo.svg" />
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Ideas for the day</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Our special playlist</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Make a Valentine </a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main__container">
+        <h1 class="main__header">
+          Make your playlist out of the songs that we’ve carefully chosen for your Valentine’s Day
+        </h1>
+        <div class="playlist">
+          <ul class="playlist__container"></ul>
+          <ul class="playlist__container"></ul>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+      <template id="playlist-block">
+        <li class="playlist__item">
+          <div class="playlist__item-name"></div>
+          <button class="plalist__item-button__play"></button>
+          <button class="plalist__item-button__pause"></button>
+        </li>
+      </template>
+    </div>
+  </body>
+</html>

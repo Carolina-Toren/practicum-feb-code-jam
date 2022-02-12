@@ -10,7 +10,7 @@
 
 1. [Carolina Toren](https://github.com/Carolina-Toren) | Web Developer
 2. [Alexandra Gritsenko](https://github.com/Sashikbear) | Web Developer
-3. [Nuriya Akhmedova ]() | Web Developer
+3. [Nuriya Akhmedova ](https://github.com/NuriyaAkh) | Web Developer
 
 ## insert name here - About the App
 
@@ -23,6 +23,11 @@
 1. HTML (Hyper Text Markup Language)
 2. CSS (Cascading Style Sheets)
 3. JavaScript
+
+## Design
+
+**The design was made with figma**
+[link to the figma file](https://www.figma.com/file/niR3WJqxMpuxpvIxVCyzMg/Ideas-for-code-jam?node-id=0%3A1)
 
 ## Live Demo
 
