@@ -27,7 +27,7 @@
 ## Design
 
 **The design was made with figma**
-[link to the figma file](https://www.figma.com/file/niR3WJqxMpuxpvIxVCyzMg/Ideas-for-code-jam?node-id=0%3A1)
+[link to the Figma file](https://www.figma.com/file/niR3WJqxMpuxpvIxVCyzMg/Ideas-for-code-jam?node-id=0%3A1)
 
 ## Live Demo
 
