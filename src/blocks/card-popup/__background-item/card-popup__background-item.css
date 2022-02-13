@@ -1,0 +1,9 @@
+.card-popup__background-item {
+  cursor: pointer;
+  border-radius: 20px;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,9 @@
+.card-popup__backgrounds-grid {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 19px;
+}

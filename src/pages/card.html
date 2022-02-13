@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="card.css" />
+    <title>Card</title>
+  </head>
+  <body class="page">
+    <header class="header"></header>
+    <main class="main">
+      <h1 class="title">
+        This Valentine&#39;s Day let the people that matter know you are
+        thinking about them
+      </h1>
+      <section class="card">
+        <div class="card__constructor">
+          <h2 class="card__title">Customize your card</h2>
+          <form action="" class="card__form">
+            <div class="card__form card__form_type_text-fields">
+              <input
+                class="card__text-input card__text-input_type_to"
+                type="text"
+                name="to"
+                id="to"
+                placeholder="Dear..."
+              />
+              <textarea
+                class="card__text-input card__text-input_type_textarea"
+                name="message"
+                id="message"
+                cols="60"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+              <input
+                class="card__text-input card__text-input_type_from"
+                type="text"
+                name="from"
+                id="from"
+                placeholder="Yours..."
+              />
+            </div>
+            <div class="card__form card__form_type_design-fields">
+              <ul class="card__options">
+                <li class="card__option">
+                  <p class="card__label">Background:</p>
+                  <button
+                    type="button"
+                    class="card__background-button"
+                  ></button>
+                </li>
+
+                <li class="card__option">
+                  <label class="card__label" for="title-picker"
+                    >Salutation colour:</label
+                  >
+                  <input
+                    class="card__colour-input"
+                    type="color"
+                    id="title-picker"
+                    name="title-picker"
+                    value="#DF1E6F"
+                  />
+                </li>
+                <li class="card__option">
+                  <label class="card__label" for="text-picker"
+                    >Text colour:</label
+                  >
+                  <input
+                    class="card__colour-input"
+                    type="color"
+                    id="text-picker"
+                    name="text-picker"
+                    value="#000000"
+                  />
+                </li>
+                <li class="card__option">
+                  <label class="card__label" for="fonts">Font:</label>
+                  <select class="card__font" id="fonts" name="fonts">
+                    <option
+                      class="card__font card__font_type_handwriting"
+                      value="handwriting"
+                    >
+                      Handwriting
+                    </option>
+                    <option
+                      class="card__font card__font_type_serious"
+                      value="serious"
+                    >
+                      Serious
+                    </option>
+                    <option
+                      class="card__font card__font_type_lighthearted"
+                      value="lighthearted"
+                    >
+                      Lighthearted
+                    </option>
+                    <option
+                      class="card__font card__font_type_bloody"
+                      value="bloody"
+                    >
+                      Bloody
+                    </option>
+                    <option
+                      class="card__font card__font_type_romantic"
+                      value="romantic"
+                    >
+                      Romantic
+                    </option>
+                    <option
+                      class="card__font card__font_type_friends"
+                      value="friends"
+                    >
+                      Friends
+                    </option>
+                    <option
+                      class="card__font card__font_type_family"
+                      value="family"
+                    >
+                      Family
+                    </option>
+                  </select>
+                </li>
+              </ul>
+              <button class="card__submit-button" type="submit">
+                Save card
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="card__display">
+          <ul class="card__card-grid"></ul>
+        </div>
+      </section>
+    </main>
+    <template id="card-item">
+      <div class="card-item">
+        <div class="card-item__overlay"></div>
+        <button
+          type="button"
+          class="card-item__button card-item__button_type_edit"
+        >
+          <svg
+            viewBox="0 0 27 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27 3.58633L7.03018 23.6698L3.46415 20.0323L23.383 0L27 3.58633ZM0 27L5.2981 25.4118L1.57925 21.8254L0 27Z"
+              fill="#DF1E6F"
+            />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="card-item__button card-item__button_type_delete"
+        >
+          <svg
+            viewBox="0 0 27 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.6122 2.31603H14.5301V0H7.62885V2.31603H2.54675V5.97291H19.6122V2.31603V2.31603ZM9.45729 1.82844H12.7017V2.31603H9.45729V1.82844Z"
+              fill="#B92B67"
+            />
+            <path
+              d="M17.9884 13.0617L18.3333 7.80127H3.82568L4.98467 25.4762H11.9432C11.0375 24.1922 10.5047 22.6271 10.5047 20.9398C10.5047 16.7259 13.826 13.2731 17.9884 13.0617Z"
+              fill="#B92B67"
+            />
+            <path
+              d="M18.3933 14.8799C15.0518 14.8799 12.3333 17.5984 12.3333 20.9399C12.3333 24.2814 15.0518 27 18.3933 27C21.7348 27 24.4534 24.2814 24.4534 20.9399C24.4534 17.5984 21.7348 14.8799 18.3933 14.8799ZM21.6952 22.9489L20.4023 24.2418L18.3933 22.2328L16.3843 24.2418L15.0914 22.9489L17.1004 20.9399L15.0914 18.9309L16.3843 17.638L18.3933 19.647L20.4023 17.638L21.6952 18.9309L19.6862 20.9399L21.6952 22.9489Z"
+              fill="#B92B67"
+            />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="card-item__button card-item__button_type_download"
+        >
+          <svg
+            viewBox="0 0 27 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_14_201)">
+              <path
+                d="M14.101 26.7519C14.1103 26.7426 20.0029 20.8887 20.0029 20.8887C20.1743 20.7174 20.2544 20.4921 20.2485 20.2684C20.2485 20.2617 20.2528 20.2558 20.2528 20.249V0.836768C20.2528 0.0940457 19.3168 -0.27728 18.7952 0.24179L13.4824 5.50988L8.23197 0.302474C7.71038 -0.257918 6.74744 -0.00725697 6.74912 1.01566V20.2414C6.7339 20.476 6.80819 20.7149 6.98884 20.8946L12.8958 26.7518C13.2283 27.0827 13.7685 27.0827 14.101 26.7519ZM8.443 19.9402L8.43795 2.90281L12.8722 7.29993C13.041 7.46788 13.2621 7.54891 13.4832 7.54722C13.7044 7.54975 13.9255 7.46788 14.0943 7.29993L18.5648 2.86654V19.9182L13.4926 24.9475L8.443 19.9402Z"
+                fill="#DF1E6F"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_14_201">
+                <rect width="27" height="27" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <h2 class="card-item__text card-item__text_type__to"></h2>
+        <p class="card-item__text card-item__text_type__message"></p>
+        <h3 class="card-item__text card-item__text_type__from"></h3>
+      </div>
+    </template>
+    <div class="card-popup">
+      <div class="card-popup__container">
+        <ul class="card-popup__backgrounds-grid">
+          <button
+            type="button"
+            class="card-item__button card-item__button_type_close"
+          >
+            <svg
+              viewBox="0 0 26 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.5631 1.43515e-06L12.5351 11.5729L2.50702 0L0 2.89323L10.0281 14.4662L0 26.0391L2.50702 28.9324L12.5351 17.3595L22.5631 28.9324L25.0702 26.0391L15.0421 14.4662L25.0702 2.89323L22.5631 1.43515e-06Z"
+                fill="#DF1E6F"
+              />
+            </svg>
+          </button>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../scripts/card.js"></script>
+  </body>
+</html>

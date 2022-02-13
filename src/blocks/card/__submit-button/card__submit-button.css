@@ -1,0 +1,15 @@
+.card__submit-button {
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  width: 90%;
+  height: 71px;
+  background: #ffffff;
+  border: 2px solid #b92b67;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
