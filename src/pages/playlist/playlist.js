@@ -4,11 +4,57 @@ const playlistContainerOur = document.querySelector("#our-playlist");
 
 let i = 0;
 
-while (i < 10) {
-  const playlistItemour = playlistItemTemplate.cloneNode(true);
+//////////////////////////////
+//////testing template///////
+////////////////////////////
+// while (i < 10) {
+//   const playlistItemour = playlistItemTemplate.cloneNode(true);
 
-  playlistContainerYour.append(playlistItemyour);
-  playlistContainerOur.append(playlistItemour);
+//   playlistContainerYour.append(playlistItemyour);
+//   playlistContainerOur.append(playlistItemour);
 
-  i++;
-}
+//   i++;
+// }
+
+const music = [
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+  {
+    name: "",
+    url: "",
+  },
+];
