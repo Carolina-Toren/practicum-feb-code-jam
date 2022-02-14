@@ -1,0 +1,11 @@
+.card__background-button {
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #b92b67;
+  border-radius: 20px;
+  background-image: url("../../../images/card-backround-19.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

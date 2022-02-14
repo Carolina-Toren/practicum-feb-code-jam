@@ -1,4 +1,8 @@
 @import url(../../blocks/header/header.css);
+@import url(../../blocks/nav/__item/nav__item.css);
+@import url(../../blocks/nav/__link/nav__link.css);
+@import url(../../blocks/nav/__list/nav__list.css);
+@import url(../../blocks/nav/nav.css);
 @import url(../../blocks/main/main.css);
 @import url(../../blocks/main/__header/main__header.css);
 @import url(../../blocks/page/page.css);
@@ -12,3 +16,4 @@
 @import url(../../blocks/playlists/__item-button/_play/playlists__item-button_play.css);
 @import url(../../blocks/playlists/__item-name/playlists__item-name.css);
 @import url(../../blocks/playlists/__item-checkbox/playlists__item-checkbox.css);
+@import url(../../blocks/footer/footer.css);

@@ -1,0 +1,10 @@
+.card-popup__container {
+  position: relative;
+  background-color: white;
+  max-width: 566px;
+  align-self: center;
+  margin: 0;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 20px;
+}
