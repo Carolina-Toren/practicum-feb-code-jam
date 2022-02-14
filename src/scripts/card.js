@@ -20,21 +20,46 @@ const backgroundOptions = [
   { url: "../images/card-backround-19.jpeg" },
   { url: "../images/card-backround-20.jpeg" },
 ];
+const initialCards = [
+  {
+    background: "url(../images/card-backround-16.jpeg)",
+    toText: "Dear Friend,",
+    messageText:
+      "Here’s to a Valentine’s Day filled with good wine, good food and especially good friends like you.",
+    fromText: "Yours, Val.",
+    toColour: "#DF1E6F",
+    messageColour: "#000000",
+    fromColour: "#DF1E6F",
+    font: "Indie Flower",
+  },
+  {
+    background: "url(../images/card-backround-3.jpeg)",
+    toText: "Dear Friend,",
+    messageText:
+      "Here’s to a Valentine’s Day filled with good wine, good food and especially good friends like you.",
+    fromText: "Yours, Val.",
+    toColour: "#DF1E6F",
+    messageColour: "#FFFFFF",
+    fromColour: "#DF1E6F",
+    font: "Manrope",
+  },
+];
 const backgroundButton = document.querySelector(".card__background-button");
-const cardGrid = document.querySelector(".card-popup__backgrounds-grid");
+const popupCardGrid = document.querySelector(".card-popup__backgrounds-grid");
 const backgroundPopup = document.querySelector(".card-popup");
 const closeButton = document.querySelector(".card-item__button_type_close");
 const cardPrototype = document.querySelector(".card__form_type_text-fields");
 const inputAll = document.querySelectorAll(".card__text-input");
-const inputColourTo = document.querySelector(".card__text-input_type_to");
-const inputColourFrom = document.querySelector(".card__text-input_type_from");
-const iputColourMessage = document.querySelector(
-  ".card__text-input_type_textarea"
-);
+const inputTo = document.querySelector(".card__text-input_type_to");
+const inputFrom = document.querySelector(".card__text-input_type_from");
+const inputMessage = document.querySelector(".card__text-input_type_textarea");
 const colourToPicker = document.querySelector("#to-picker");
 const colourFromPicker = document.querySelector("#from-picker");
 const colourMessagePicker = document.querySelector("#text-picker");
 const fontSelector = document.querySelector("#fonts");
+const cardGrid = document.querySelector(".card__card-grid");
+
+const addCardFormElement = document.querySelector(".card__form");
 function openPopup(popup) {
   popup.classList.add("card-popup_opened");
   document.addEventListener("keydown", closeByEscape);
@@ -64,7 +89,7 @@ backgroundOptions.forEach((option) => {
     backgroundButton.style.backgroundImage = evt.target.style.backgroundImage;
     cardPrototype.style.backgroundImage = evt.target.style.backgroundImage;
   });
-  cardGrid.append(backgroundItem);
+  popupCardGrid.append(backgroundItem);
 });
 function changeColour(evt, input) {
   input.style.color = evt.target.value;
@@ -74,16 +99,74 @@ function changeFont(evt, inputs) {
     input.style.fontFamily = `${evt.target.value}`;
   });
 }
+function handleDeleteButton() {}
+function handleEditButton() {}
+function handleDownloadButton() {}
+
+const addCard = (card) => {
+  const cardTemplate = document.querySelector("#card-item").content;
+  const cardElement = cardTemplate.querySelector(".card-item").cloneNode(true);
+  const to = cardElement.querySelector(".card-item__text_type__to");
+  const message = cardElement.querySelector(".card-item__text_type__message");
+  const from = cardElement.querySelector(".card-item__text_type__from");
+  const editButton = cardElement.querySelector(".card-item__button_type_edit");
+  const deleteButton = cardElement.querySelector(
+    ".card-item__button_type_delete"
+  );
+  const downloadButton = cardElement.querySelector(
+    ".card-item__button_type_download"
+  );
+  cardElement.style.backgroundImage = card.background;
+  cardElement.style.fontFamily = `${card.font}`;
+  to.textContent = card.toText;
+  to.style.color = card.toColour;
+  message.textContent = card.messageText;
+  message.style.color = card.messageColour;
+  from.textContent = card.fromText;
+  from.style.color = card.fromColour;
+
+  deleteButton.addEventListener("click", handleDeleteButton);
+
+  editButton.addEventListener("click", handleEditButton);
+  downloadButton.addEventListener("click", handleDownloadButton);
+
+  return cardElement;
+};
+
+const attachCard = (card) => {
+  cardGrid.prepend(addCard(card));
+};
+
+initialCards.forEach(attachCard);
+
+function handleAddCardFormSubmit(evt) {
+  evt.preventDefault();
+  const card = {
+    background:
+      backgroundButton.style.backgroundImage ||
+      "url(../images/card-backround-19.jpeg)",
+    toText: inputTo.value,
+    messageText: inputMessage.value,
+    fromText: inputFrom.value,
+    toColour: colourToPicker.value,
+    messageColour: colourMessagePicker.value,
+    fromColour: colourFromPicker.value,
+    font: fontSelector.value,
+  };
+
+  attachCard(card);
+
+  addCardFormElement.reset();
+}
 
 backgroundButton.addEventListener("click", () => openPopup(backgroundPopup));
 closeButton.addEventListener("click", () => closePopup(backgroundPopup));
-colourToPicker.addEventListener("change", (evt) =>
-  changeColour(evt, inputColourTo)
-);
+colourToPicker.addEventListener("change", (evt) => changeColour(evt, inputTo));
 colourFromPicker.addEventListener("change", (evt) =>
-  changeColour(evt, inputColourFrom)
+  changeColour(evt, inputFrom)
 );
 colourMessagePicker.addEventListener("change", (evt) =>
-  changeColour(evt, iputColourMessage)
+  changeColour(evt, inputMessage)
 );
 fontSelector.addEventListener("change", (evt) => changeFont(evt, inputAll));
+addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
