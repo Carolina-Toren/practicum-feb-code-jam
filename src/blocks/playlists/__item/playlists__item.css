@@ -1,0 +1,10 @@
+.playlists__item {
+  background: #ffffff;
+  border: 1px solid #df1e6f;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  width: 471px;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}

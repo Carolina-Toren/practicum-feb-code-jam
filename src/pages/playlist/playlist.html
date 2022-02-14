@@ -24,19 +24,25 @@
         <h1 class="main__header">
           Make your playlist out of the songs that we’ve carefully chosen for your Valentine’s Day
         </h1>
-        <div class="playlist">
-          <ul class="playlist__container"></ul>
-          <ul class="playlist__container"></ul>
+        <div class="playlists">
+          <ul class="playlists__container" id="your-playlist">
+            <h2 class="playlists__header" id="your-playlist-header">Your playlist</h2>
+          </ul>
+          <ul class="playlists__container" id="our-playlist">
+            <h2 class="playlists__header" id="our-playlist-header">Our playlist</h2>
+          </ul>
         </div>
       </main>
       <footer class="footer"></footer>
       <template id="playlist-block">
-        <li class="playlist__item">
-          <div class="playlist__item-name"></div>
-          <button class="plalist__item-button__play"></button>
-          <button class="plalist__item-button__pause"></button>
+        <li class="playlists__item">
+          <input class="playlists__item-checkbox" type="checkbox" />
+          <div class="playlists__item-name"></div>
+          <button class="playlists__item-button_play"></button>
+          <button class="playlists__item-button_pause"></button>
         </li>
       </template>
     </div>
+    <script src="../playlist/playlist.js" defer></script>
   </body>
 </html>
