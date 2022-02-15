@@ -1,5 +1,9 @@
 .footer__container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin:auto;
+}
+.footer__container_columns{
+    display: flex;
+    margin-bottom: 15px;
 }
