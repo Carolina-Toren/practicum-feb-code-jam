@@ -1,10 +1,9 @@
 .idea__card{
     width: 100%;
     max-width: 984px;
-    display:grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows:1fr auto;
-    
-    column-gap: 92px;
+    display:flex;
+    flex-direction: row;
     margin-bottom: 60px;
+    margin:0 auto;
+    padding-bottom: 93px;
 }
