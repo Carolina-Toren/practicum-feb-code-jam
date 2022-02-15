@@ -1,28 +1,28 @@
 const backgroundOptions = [
-  { url: "../images/card-backround-1.jpeg" },
-  { url: "../images/card-backround-2.jpeg" },
-  { url: "../images/card-backround-3.jpeg" },
-  { url: "../images/card-backround-4.jpeg" },
-  { url: "../images/card-backround-5.jpeg" },
-  { url: "../images/card-backround-6.jpeg" },
-  { url: "../images/card-backround-7.jpeg" },
-  { url: "../images/card-backround-8.jpeg" },
-  { url: "../images/card-backround-9.jpeg" },
-  { url: "../images/card-backround-10.jpeg" },
-  { url: "../images/card-backround-11.jpeg" },
-  { url: "../images/card-backround-12.jpeg" },
-  { url: "../images/card-backround-13.jpeg" },
-  { url: "../images/card-backround-14.jpeg" },
-  { url: "../images/card-backround-15.jpeg" },
-  { url: "../images/card-backround-16.jpeg" },
-  { url: "../images/card-backround-17.jpeg" },
-  { url: "../images/card-backround-18.jpeg" },
-  { url: "../images/card-backround-19.jpeg" },
-  { url: "../images/card-backround-20.jpeg" },
+  { url: "../../images/backgrounds/card-backround-1.jpg" },
+  { url: "../../images/backgrounds/card-backround-2.jpg" },
+  { url: "../../images/backgrounds/card-backround-3.jpg" },
+  { url: "../../images/backgrounds/card-backround-4.jpg" },
+  { url: "../../images/backgrounds/card-backround-5.jpg" },
+  { url: "../../images/backgrounds/card-backround-6.jpg" },
+  { url: "../../images/backgrounds/card-backround-7.jpg" },
+  { url: "../../images/backgrounds/card-backround-8.jpg" },
+  { url: "../../images/backgrounds/card-backround-9.jpg" },
+  { url: "../../images/backgrounds/card-backround-10.jpg" },
+  { url: "../../images/backgrounds/card-backround-11.jpg" },
+  { url: "../../images/backgrounds/card-backround-12.jpg" },
+  { url: "../../images/backgrounds/card-backround-13.jpg" },
+  { url: "../../images/backgrounds/card-backround-14.jpg" },
+  { url: "../../images/backgrounds/card-backround-15.jpg" },
+  { url: "../../images/backgrounds/card-backround-16.jpg" },
+  { url: "../../images/backgrounds/card-backround-17.jpg" },
+  { url: "../../images/backgrounds/card-backround-18.jpg" },
+  { url: "../../images/backgrounds/card-backround-19.jpg" },
+  { url: "../../images/backgrounds/card-backround-20.jpeg" },
 ];
 const initialCards = [
   {
-    background: "url(../images/card-backround-16.jpeg)",
+    background: "url(../../images/backgrounds/card-backround-11.jpg)",
     toText: "Dear Friend,",
     messageText:
       "Here’s to a Valentine’s Day filled with good wine, good food and especially good friends like you.",
@@ -33,7 +33,7 @@ const initialCards = [
     font: "Indie Flower",
   },
   {
-    background: "url(../images/card-backround-3.jpeg)",
+    background: "url(../../images/backgrounds/card-backround-3.jpg)",
     toText: "Dear Friend,",
     messageText:
       "Here’s to a Valentine’s Day filled with good wine, good food and especially good friends like you.",
@@ -178,7 +178,7 @@ function handleAddCardFormSubmit(evt) {
   const card = {
     background:
       backgroundButton.style.backgroundImage ||
-      "url(../images/card-backround-19.jpeg)",
+      "url(../../images/backgrounds/card-backround-1.jpg)",
     toText: inputTo.value,
     messageText: inputMessage.value,
     fromText: inputFrom.value,
