@@ -1,4 +1,5 @@
 .card-item__button_type_download {
+  background-image: url("../../../../images/download.svg");
   position: absolute;
   bottom: 10px;
   left: 10px;

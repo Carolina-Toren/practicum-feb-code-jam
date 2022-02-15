@@ -1,5 +1,6 @@
 .page {
   box-sizing: border-box;
+<<<<<<< HEAD
   width: 100%;
   max-width: 2000px;
   background-color: rgba(229, 149, 183, 0.12);
@@ -10,4 +11,9 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+=======
+  max-width: 1280px;
+  background: #e5e5e5;
+  margin: 0 auto;
+>>>>>>> feature/card
 }
