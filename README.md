@@ -53,6 +53,12 @@ In this app you can crate a playlist from a list of love songs that we carfully 
 
 ---
 
+# Figma design
+
+[link to figma design](https://www.figma.com/file/niR3WJqxMpuxpvIxVCyzMg/Ideas-for-code-jam?node-id=0%3A1)
+
+---
+
 # Live Demo
 
 Enjoy the live web app [here](#).
