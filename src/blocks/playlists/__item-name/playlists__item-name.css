@@ -1,3 +1,30 @@
 .playlists__item-name {
+  position: relative;
   margin: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  width: 300px;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlists__item-name:hover {
+  animation-name: scroll;
+  animation-duration: 20s;
+  overflow: visible;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }

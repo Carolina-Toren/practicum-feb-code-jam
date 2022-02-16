@@ -9,47 +9,83 @@
     <title>Playlist</title>
   </head>
   <body class="page">
-    <div class="page__container">
-      <header class="header">
-        <nav class="nav">
-          <img class="header__logo" src="../../images/logo/logo.svg" />
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="../index.html">Ideas for the day</a></li>
-            <li class="nav__item"><a class="nav__link" href="./playlist.html">Our special playlist</a></li>
-            <li class="nav__item"><a class="nav__link" href="../card.html">Make a card </a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main__container">
-        <h1 class="main__header">
-          Make your playlist out of the songs that we’ve carefully chosen for your Valentine’s Day
-        </h1>
-        <div class="playlists">
-          <ul class="playlists__container" id="your-playlist">
-            <h2 class="playlists__header" id="your-playlist-header">Your playlist</h2>
-          </ul>
-          <ul class="playlists__container" id="our-playlist">
-            <h2 class="playlists__header" id="our-playlist-header">Our playlist</h2>
-          </ul>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer__container"></div>
-      </footer>
-      <template id="playlist-block">
-        <li class="playlists__item">
-          <input class="playlists__item-checkbox" type="checkbox" />
-          <div>
-            <h3 class="playlists__item-name">song name</h3>
-            <iframe
-              class="playlist__iframe"
-              src="https://vocaroo.com/embed/1nvNMYF35O4d?autoplay=0"
-              frameborder="0"
-            ></iframe>
+    <header class="header">
+      <nav class="nav">
+        <img class="header__logo" src="../../images/logo/logo.svg" />
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="../index.html">Ideas for the day</a></li>
+          <li class="nav__item"><a class="nav__link" href="./playlist.html">Our special playlist</a></li>
+          <li class="nav__item"><a class="nav__link" href="../card.html">Make a card </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__container">
+      <h1 class="main__header">
+        Make your playlist out of the songs that we’ve carefully chosen for your Valentine’s Day
+      </h1>
+      <div class="playlists">
+        <ul class="playlists__container" id="your-playlist">
+          <h2 class="playlists__header" id="your-playlist-header">Your playlist</h2>
+        </ul>
+        <ul class="playlists__container" id="our-playlist">
+          <h2 class="playlists__header" id="our-playlist-header">Our playlist</h2>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container_columns">
+          <div class="footer__blog">
+            <nav class="footer__nav">
+              <p class="footer__title">Blog</p>
+              <ul class="footer__list">
+                <li><a class="footer__link" href="index.html">Ideas</a></li>
+                <li><a class="footer__link" href="#">Playlist</a></li>
+                <li><a class="footer__link" href="card.html">Card </a></li>
+              </ul>
+            </nav>
           </div>
-        </li>
-      </template>
-    </div>
+          <img class="footer__logo" src="../../images/heart-svgrepo-com 4.png" alt="human heart logo" />
+
+          <div class="footer__contact">
+            <p class="footer__title">Contact Us</p>
+            <ul class="footer__list">
+              <li>
+                <a class="footer__link" href="#"
+                  ><img class="footer__social-icons" src="../../images/instagram-brands 3.png" alt="instagram icon"
+                /></a>
+              </li>
+              <li>
+                <a class="footer__link" href="#"
+                  ><img class="footer__social-icons" src="../../images/Vector-facebook.svg" alt="facebook icon"
+                /></a>
+              </li>
+              <li>
+                <a class="footer__link" href="#"
+                  ><img class="footer__social-icons" src="../../images/twitter 3.png" alt="twitter icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__author">&copy; ByteMe, 2022.</p>
+        </div>
+      </div>
+    </footer>
+    <template id="playlist-block">
+      <li class="playlists__item">
+        <button class="playlists__item-button" type="button"></button>
+        <div class="playlist__item-container">
+          <h3 class="playlists__item-name">song name</h3>
+          <iframe
+            class="playlist__iframe"
+            src="https://vocaroo.com/embed/1nvNMYF35O4d?autoplay=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </li>
+    </template>
     <script src="../playlist/scripts/playlist.js"></script>
   </body>
 </html>

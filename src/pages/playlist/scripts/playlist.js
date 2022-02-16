@@ -74,25 +74,31 @@ const playlistItemTemplate = document.querySelector("#playlist-block").content.q
 const playlistContainerYour = document.querySelector("#your-playlist");
 const playlistContainerOur = document.querySelector("#our-playlist");
 
-function playlistGenerator({ name, url }) {
+function playlistGenerator({ name, url }, buttonText) {
   const playlistItem = playlistItemTemplate.cloneNode(true);
   const playlistName = playlistItem.querySelector(".playlists__item-name");
   const playlistUrl = playlistItem.querySelector(".playlist__iframe");
-  const playlistCheckbox = playlistItem.querySelector(".playlists__item-checkbox");
+  const playlistbutton = playlistItem.querySelector(".playlists__item-button");
   playlistName.textContent = name;
   playlistUrl.src = url;
   playlistUrl.alt = name;
-  playlistCheckbox.addEventListener("click", (e) => {
-    moveToYourPlatlist(playlistItem);
+  playlistbutton.textContent = buttonText;
+
+  playlistbutton.addEventListener("click", (e) => {
+    switchToYourPlatlist(playlistItem, { name, url });
   });
   return playlistItem;
 }
 
 music.forEach((musicData) => {
-  playlistContainerOur.append(playlistGenerator(musicData));
+  playlistContainerOur.append(playlistGenerator(musicData, "Select"));
 });
 
-function moveToYourPlatlist(itemData) {
-  this._item = itemData;
-  console.log("this is ", this._item);
+function switchToYourPlatlist(itemData, musicData) {
+  if (itemData.parentNode === playlistContainerOur) {
+    playlistContainerYour.append(playlistGenerator(musicData, "Delete"));
+  } else {
+    playlistContainerOur.append(playlistGenerator(musicData, "Select"));
+  }
+  itemData.remove();
 }

@@ -1,0 +1,13 @@
+.playlists__item-button {
+  height: 25px;
+  width: 70px;
+  border: 2px solid #df1e6f;
+  background-color: #fff;
+  margin: 50px 15px;
+  border-radius: 25%;
+  text-align: center;
+  font-family: inter;
+  padding: 05;
+  box-sizing: border-box;
+  font-size: 15px;
+}
