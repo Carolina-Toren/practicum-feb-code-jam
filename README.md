@@ -4,7 +4,11 @@
 
 **Table of Contents**
 
-- [About the team](#about-the-team) - [About the App](#about-the-app) - [Technologies and Standards Used in Frontend Development](#technologies-and-standards-used-in-frontend-development) - [Concepts that have been emphasized](#concepts-that-have-been-emphasized) - [Live Demo](#live-demo)
+- [About the team](#about-the-team)
+- [About the App](#about-the-app)
+- [Technologies and Standards Used in Frontend Development](#technologies-and-standards-used-in-frontend-development)
+- [Concepts that have been emphasized](#concepts-that-have-been-emphasized)
+- [Live Demo](#live-demo)
 
 # About the team
 
