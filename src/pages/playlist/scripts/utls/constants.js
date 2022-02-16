@@ -1,4 +1,4 @@
-const music = [
+export const music = [
   {
     name: "ron gelinas: chillout lounge where will i go",
     url: "https://vocaroo.com/embed/1nvNMYF35O4d?autoplay=0",
@@ -66,4 +66,6 @@ const music = [
   },
 ];
 
-export default music;
+export const playlistItemTemplate = document.querySelector("#playlist-block").content.querySelector(".playlists__item");
+export const playlistContainerYour = document.querySelector("#your-playlist");
+export const playlistContainerOur = document.querySelector("#our-playlist");

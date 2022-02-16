@@ -1,6 +1,10 @@
+@import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts/fonts.css);
 @import url(../../blocks/scrollbar/scrollbar.css);
 @import url(../../blocks/header/header.css);
+@import url(../../blocks/header/__logo-link/header__logo-link.css);
+@import url(../../blocks/header/__logo/header__logo.css);
+@import url(../../blocks/header/__container/header__container.css);
 @import url(../../blocks/nav/__item/nav__item.css);
 @import url(../../blocks/nav/__link/nav__link.css);
 @import url(../../blocks/nav/__list/nav__list.css);
@@ -9,15 +13,12 @@
 @import url(../../blocks/main/main.css);
 @import url(../../blocks/main/__header/main__header.css);
 @import url(../../blocks/page/page.css);
-@import url(../../blocks/page/__container/page__container.css);
 @import url(../../blocks/main/__container/main__container.css);
 @import url(../../blocks/playlists/playlists.css);
 @import url(../../blocks/playlists/__header/playlists__header.css);
 @import url(../../blocks/playlists/__container/playlists__container.css);
 @import url(../../blocks/playlists/__item/playlists__item.css);
 @import url(../../blocks/playlists/__iframe/playlist__iframe.css);
-@import url(../../blocks/playlists/__item-button/_pause/playlists__item-button_pause.css);
-@import url(../../blocks/playlists/__item-button/_play/playlists__item-button_play.css);
 @import url(../../blocks/playlists/__item-name/playlists__item-name.css);
 @import url(../../blocks/playlists/__item-button/playlists__item-button.css);
 @import url(../../blocks/footer/footer.css);

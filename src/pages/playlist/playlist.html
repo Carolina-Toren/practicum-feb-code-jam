@@ -10,14 +10,24 @@
   </head>
   <body class="page">
     <header class="header">
-      <nav class="nav">
-        <img class="header__logo" src="../../images/logo/logo-black.svg" />
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="../index.html">Ideas for the day</a></li>
-          <li class="nav__item"><a class="nav__link" href="./playlist.html">Our special playlist</a></li>
-          <li class="nav__item"><a class="nav__link" href="../card.html">Make a card </a></li>
-        </ul>
-      </nav>
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo" src="../../images/logo/logo-black.svg" alt="human heart logo"
+      /></a>
+      <div class="header__container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../index/index.html">Ideas for the day</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link_active" href="../playlist/playlist.html">Our special playlist</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../card/card.html">Make a card </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main__container">
       <h1 class="main__header">
@@ -27,9 +37,10 @@
         <ul class="playlists__container" id="your-playlist">
           <h2 class="playlists__header" id="your-playlist-header">Your playlist</h2>
         </ul>
-        <ul class="playlists__container" id="our-playlist">
+        <div class="playlists__container">
           <h2 class="playlists__header" id="our-playlist-header">Our playlist</h2>
-        </ul>
+          <ul class="playlists__list-container" id="our-playlist"></ul>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -86,6 +97,6 @@
         </div>
       </li>
     </template>
-    <script src="../playlist/scripts/playlist.js"></script>
+    <script type="module" src="../playlist/scripts/playlist.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 .playlists {
   display: flex;
   align-self: center;
-  margin-top: 156px;
+
+  margin: 100px auto 100px;
 }
