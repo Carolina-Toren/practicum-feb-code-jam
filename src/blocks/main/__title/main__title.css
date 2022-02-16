@@ -7,5 +7,19 @@
     font-size: 48px;
     line-height: 58px;
     text-align: center;
-
+}
+@media screen and (max-width: 880px){
+.main__title {
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    padding: 0px 10px;
+    }
+}
+@media screen and (max-width: 320px){
+.main__title {
+    max-width: 300px;
+    font-size: 40px;
+    margin: 30px auto;
+    }
 }
