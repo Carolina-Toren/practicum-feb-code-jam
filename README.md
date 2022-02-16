@@ -1,34 +1,65 @@
 # practicum-feb-code-jam | Team - _Byte Me_
 
+![](/src/images/logo/logo-white.svg)
+
+**Table of Contents**
+
+[TOCM]
+
+[TOC]
+
 - [Team Members](#team-members)
-- [insert name here - About the App](#insert-name-here---about-the-app)
-- [Features of the App](#features-of-the-app)
-- [Technologies and Standards Used in Frontend Development](#technologies-and-standards-used-in-frontend-development)
-- [Live Demo](#live-demo)
 
-## Team Members
+# About the team
 
-1. [Carolina Toren](https://github.com/Carolina-Toren) | Web Developer
-2. [Alexandra Gritsenko](https://github.com/Sashikbear) | Web Developer
-3. [Nuriya Akhmedova ](https://github.com/NuriyaAkh) | Web Developer
+###[Carolina Toren](https://github.com/Carolina-Toren)
 
-## insert name here - About the App
+---
 
-## Features of the App
+Web Developer Student and Practical Software engineer, from Israel
 
-## Technologies and Standards Used in Frontend Development
+### [Alexandra Gritsenko](https://github.com/Sashikbear)
 
-**The technologies that have been used are:**
+Web Developer from Israel
 
-1. HTML (Hyper Text Markup Language)
-2. CSS (Cascading Style Sheets)
-3. JavaScript
+### [Nuriya Akhmedova ](https://github.com/NuriyaAkh)
 
-## Design
+Web Developer from USA
 
-**The design was made with figma**
-[link to the Figma file](https://www.figma.com/file/niR3WJqxMpuxpvIxVCyzMg/Ideas-for-code-jam?node-id=0%3A1)
+---
 
-## Live Demo
+# About the App
 
-Enjoy the live web app [here]().
+In this app you can crate a playlist from a list of love songs that we carfully chose to maximize the mood, you can create costum Card to give to your loved one, and read defrent articles about Valentine's day, dating tips etc.
+
+---
+
+# Technologies and Standards Used in Frontend Development
+
+| Tools                                           | Usege                                             |
+| ----------------------------------------------- | ------------------------------------------------- |
+| Figma                                           | For referring to the product design specification |
+| [vocaroo.com](https://vocaroo.com)              | For hosting the songs                             |
+| [chosic.com](https://www.chosic.com/free-music) | For downloading royalty free music                |
+|                                                 |                                                   |
+
+---
+
+# Concepts that have been emphasized
+
+1. The website has been developed following the desktop first approach.
+2. [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+3. [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+4. Css Animations
+5. [BEM — Block Element Modifier](https://en.bem.info/methodology/quick-start/)
+
+---
+
+# Live Demo
+
+Enjoy the live web app [here](#).
+
+```
+
+###End
+```
