@@ -18,7 +18,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link " href="../index/index.html"
+              <a class="nav__link" href="../index/index.html"
                 >Ideas for the day</a
               >
             </li>
@@ -28,7 +28,9 @@
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link_active" href="card.html">Make a card </a>
+              <a class="nav__link nav__link_active" href="card.html"
+                >Make a card
+              </a>
             </li>
           </ul>
         </nav>
@@ -96,7 +98,7 @@
                     type="color"
                     id="text-picker"
                     name="text-picker"
-                    value="#000000"
+                    value="#FFFFFF"
                   />
                 </li>
                 <li class="card__option">
@@ -186,11 +188,6 @@
         <button
           type="button"
           class="card-item__button card-item__button_type_download"
-          aria-label="download"
-        ></button>
-        <button
-          type="button"
-          class="card-item__button card-item__button_type_zoom"
           aria-label="zoom"
         ></button>
         <h2 class="card-item__text card-item__text_type__to"></h2>
@@ -209,16 +206,25 @@
       </div>
     </div>
     <div class="card-popup card-popup_type_card-preview">
-      <div class="card-item card-item_location_popup">
+      <div
+        class="card-popup__container card-popup__container_location_card-preview"
+      >
         <button
           type="button"
-          class="card-item__button card-item__button_type_close"
+          class="card-popup__button card-popup__button_type_close"
           aria-label="close"
         ></button>
-        <div class="card-item__overlay card-item__overlay"></div>
-        <h2 class="card-item__text card-item__text_type__to"></h2>
-        <p class="card-item__text card-item__text_type__message"></p>
-        <h3 class="card-item__text card-item__text_type__from"></h3>
+        <button
+          type="button"
+          class="card-popup__button card-popup__button_type_download"
+          aria-label="download"
+        ></button>
+        <div id="my-node" class="card-item card-item_location_popup">
+          <div class="card-item__overlay card-item__overlay"></div>
+          <h2 class="card-item__text card-item__text_type__to"></h2>
+          <p class="card-item__text card-item__text_type__message"></p>
+          <h3 class="card-item__text card-item__text_type__from"></h3>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -283,5 +289,6 @@
       </div>
     </footer>
     <script src="../card/scripts/card.js"></script>
+    <script src="../../../node_modules/dom-to-image/src/dom-to-image.js"></script>
   </body>
 </html>

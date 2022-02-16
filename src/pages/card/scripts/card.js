@@ -69,6 +69,9 @@ const fontSelector = document.querySelector("#fonts");
 const cardGrid = document.querySelector(".card__card-grid");
 const cardConstructor = document.querySelector(".card__constructor");
 const addCardFormElement = document.querySelector(".card__form");
+const downloadCardButton = document.querySelector(
+  ".card-popup__button_type_download"
+);
 function openPopup(popup) {
   popup.classList.add("card-popup_opened");
   document.addEventListener("keydown", closeByEscape);
@@ -90,7 +93,7 @@ popups.forEach((popup) => {
     if (evt.target.classList.contains("card-popup_opened")) {
       closePopup(popup);
     }
-    if (evt.target.classList.contains("card-item__button_type_close")) {
+    if (evt.target.classList.contains("card-popup__button_type_close")) {
       closePopup(popup);
     }
   });
@@ -137,7 +140,21 @@ function handleEditButton(evt) {
 
   editCard.remove();
 }
-function handleDownloadButton(evt) {}
+function handleDownloadButton() {
+  domtoimage.toPng(node);
+  var node = document.getElementById("my-node");
+  domtoimage
+    .toJpeg(document.getElementById("my-node"), { quality: 0.95 })
+    .then(function (dataUrl) {
+      var link = document.createElement("a");
+      link.download = "my-image-name.jpeg";
+      link.href = dataUrl;
+      link.click();
+    })
+    .catch(function (error) {
+      console.error("oops, something went wrong!", error);
+    });
+}
 
 const addCard = (card) => {
   const cardTemplate = document.querySelector("#card-item").content;
@@ -149,10 +166,10 @@ const addCard = (card) => {
   const deleteButton = cardElement.querySelector(
     ".card-item__button_type_delete"
   );
+
   const downloadButton = cardElement.querySelector(
     ".card-item__button_type_download"
   );
-  const zoomButton = cardElement.querySelector(".card-item__button_type_zoom");
   cardElement.style.backgroundImage = card.background;
   cardElement.style.fontFamily = `${card.font}`;
   to.textContent = card.toText;
@@ -164,8 +181,8 @@ const addCard = (card) => {
 
   deleteButton.addEventListener("click", handleDeleteButton);
   editButton.addEventListener("click", handleEditButton);
-  downloadButton.addEventListener("click", handleDownloadButton);
-  zoomButton.addEventListener("click", openPreviewCardPopup);
+
+  downloadButton.addEventListener("click", openPreviewCardPopup);
   return cardElement;
 };
 
@@ -228,20 +245,4 @@ colourMessagePicker.addEventListener("change", (evt) =>
 );
 fontSelector.addEventListener("change", (evt) => changeFont(evt, inputAll));
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
-
-// const Btn = document.querySelector("#button");
-// Btn.addEventListener("click", function (evt) {
-//   openPopup(downloadCardPopup);
-//   (function takeshot() {
-//     const downloadable = evt.target.closest(".card-popup_type_card-preview");
-//     console.log(downloadable);
-//     const downloadableCard = downloadable.querySelector(
-//       ".card-item_location_popup"
-//     );
-//     console.log(downloadableCard);
-//     const popupContainer = document.getElementById("popup-download");
-//     html2canvas(downloadableCard).then(function (canvas) {
-//       popupContainer.append(canvas);
-//     });
-//   })();
-// });
+downloadCardButton.addEventListener("click", handleDownloadButton);

@@ -1,11 +1,11 @@
-.card-item__button {
-  position: absolute;
+.card-popup__button {
   background: none;
   cursor: pointer;
-  width: 27px;
-  height: 27px;
   border: none;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
 }

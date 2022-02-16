@@ -1,0 +1,8 @@
+.card-popup__container_location_card-preview {
+  background: none;
+  position: relative;
+  max-width: 400px;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
