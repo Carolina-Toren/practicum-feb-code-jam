@@ -1,0 +1,22 @@
+.idea__button {
+  cursor: pointer;
+  margin: 10px 10px 0 0;
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 2px solid #b92b67;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.idea__button:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(223, 30, 111, 0.33) 0%,
+    rgba(107, 243, 0, 0.44) 100%
+  );
+}
