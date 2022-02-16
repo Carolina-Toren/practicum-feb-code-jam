@@ -67,7 +67,7 @@ const colourFromPicker = document.querySelector("#from-picker");
 const colourMessagePicker = document.querySelector("#text-picker");
 const fontSelector = document.querySelector("#fonts");
 const cardGrid = document.querySelector(".card__card-grid");
-
+const cardConstructor = document.querySelector(".card__constructor");
 const addCardFormElement = document.querySelector(".card__form");
 function openPopup(popup) {
   popup.classList.add("card-popup_opened");
@@ -119,6 +119,8 @@ function handleDeleteButton(evt) {
   evt.target.closest(".card-item").remove();
 }
 function handleEditButton(evt) {
+  cardConstructor.scrollIntoView();
+
   const editCard = evt.target.closest(".card-item");
   const editTo = editCard.querySelector(".card-item__text_type__to");
   const editMessage = editCard.querySelector(".card-item__text_type__message");
