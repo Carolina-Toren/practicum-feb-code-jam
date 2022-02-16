@@ -1,0 +1,9 @@
+.card__submit-button_disabled {
+  background: linear-gradient(
+    180deg,
+    rgba(107, 243, 0, 0.15) 45.83%,
+    rgba(107, 243, 0, 0) 100%
+  );
+  cursor: default;
+  border: none;
+}
