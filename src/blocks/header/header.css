@@ -3,7 +3,11 @@
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  background-color: rgba(223, 30, 111, 0.12);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 30, 111, 0.33) 0%,
+    rgba(107, 243, 0, 0.44) 100%
+  );
   justify-content: center;
   min-height: 88px;
 }
