@@ -35,12 +35,13 @@ In this app you can crate a playlist from a list of love songs that we carfully 
 
 # Technologies and Standards Used in Frontend Development
 
-| Tools                                           | Usege                                             |
-| ----------------------------------------------- | ------------------------------------------------- |
-| Figma                                           | For referring to the product design specification |
-| [vocaroo.com](https://vocaroo.com)              | For hosting the songs                             |
-| [chosic.com](https://www.chosic.com/free-music) | For downloading royalty free music                |
-|                                                 |                                                   |
+| Tools                                                  | Usage                                                 |
+| ------------------------------------------------------ | ----------------------------------------------------- |
+| Figma                                                  | For referring to the product design specification     |
+| [vocaroo.com](https://vocaroo.com)                     | For hosting the songs                                 |
+| [chosic.com](https://www.chosic.com/free-music)        | For downloading royalty free music                    |
+| [dom-to-image](https://github.com/tsayen/dom-to-image) | Generates an image from a DOM node using HTML5 canvas |
+| [tinypng](https://tinypng.com/)                        | For JPEG/PNG Image Compression                        |
 
 ---
 
