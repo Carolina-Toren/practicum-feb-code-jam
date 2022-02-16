@@ -1,10 +1,17 @@
 @import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts/fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Baskervville&family=Creepster&family=Heebo:wght@400;500;700;900&family=Indie+Flower&family=Inter:wght@400;500;600;700&family=Manrope&family=Niconne&family=Sora&display=swap");
 @import url(../../blocks/scrollbar/scrollbar.css);
 @import url(../../blocks/header/header.css);
+<<<<<<< HEAD
 @import url(../../blocks/header/__logo-link/header__logo-link.css);
 @import url(../../blocks/header/__logo/header__logo.css);
 @import url(../../blocks/header/__container/header__container.css);
+=======
+@import url(../../blocks/header/__container/header__container.css);
+@import url(../../blocks/header/__logo/header__logo.css);
+@import url(../../blocks/header/__logo-link/header__logo-link.css);
+>>>>>>> develop
 @import url(../../blocks/nav/__item/nav__item.css);
 @import url(../../blocks/nav/__link/nav__link.css);
 @import url(../../blocks/nav/__list/nav__list.css);

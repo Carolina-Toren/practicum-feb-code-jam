@@ -35,7 +35,6 @@
 @import url(../../blocks/card/__display/card__display.css);
 @import url(../../blocks/card/__card-grid/card__card-grid.css);
 @import url(../../blocks/card-item/card-item.css);
-@import url(../../blocks/card-item/_location/card-item_location_popup.css);
 @import url(../../blocks/card-item/__text/card-item__text.css);
 @import url(../../blocks/card-item/__text/_type/card-item__text_type__message.css);
 @import url(../../blocks/card-item/__overlay/card-item__overlay.css);
@@ -43,13 +42,15 @@
 @import url(../../blocks/card-item/__button/_type/card-item__button_type_edit.css);
 @import url(../../blocks/card-item/__button/_type/card-item__button_type_delete.css);
 @import url(../../blocks/card-item/__button/_type/card-item__button_type_download.css);
-@import url(../../blocks/card-item/__button/_type/card-item__button_type_zoom.css);
-@import url(../../blocks/card-item/__button/_type/card-item__button_type_close.css);
 @import url(../../blocks/card-popup/card-popup.css);
 @import url(../../blocks/card-popup/__container/card-popup__container.css);
+@import url(../../blocks/card-popup/__container/_location/card-popup__container_location_card-preview.css);
 @import url(../../blocks/card-popup/_opened/card-popup_opened.css);
 @import url(../../blocks/card-popup/__backgrounds-grid/card-popup__backgrounds-grid.css);
 @import url(../../blocks/card-popup/__background-item/card-popup__background-item.css);
+@import url(../../blocks/card-popup/__button/card-popup__button.css);
+@import url(../../blocks/card-popup/__button/_type/card-popup__button_type_close.css);
+@import url(../../blocks/card-popup/__button/_type/card-popup__button_type_download.css);
 @import url(../../blocks/nav/nav.css);
 @import url(../../blocks/nav/__item/nav__item.css);
 @import url(../../blocks/nav/__link/nav__link.css);
@@ -66,3 +67,4 @@
 @import url(../../blocks/footer/__social-icons/footer__social-icons.css);
 @import url(../../blocks/footer/__title/footer__title.css);
 @import url(../../blocks/footer/__copyright/footer__copyright.css);
+@import url(../../blocks/scrollbar/scrollbar.css);

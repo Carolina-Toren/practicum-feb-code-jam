@@ -3,7 +3,11 @@
   margin: 0 0 0 10px;
   width: 90%;
   height: 71px;
-  background: rgba(229, 149, 183, 0.12);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 30, 111, 0.33) 0%,
+    rgba(107, 243, 0, 0.44) 100%
+  );
   border: 2px solid #b92b67;
   box-sizing: border-box;
   border-radius: 20px;

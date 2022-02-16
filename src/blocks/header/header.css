@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row;
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -10,4 +11,5 @@
   );
   justify-content: center;
   min-height: 88px;
+  border-bottom: solid black 1px;
 }

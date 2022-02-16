@@ -7,3 +7,17 @@
     margin:0 auto;
     padding-bottom: 93px;
 }
+@media screen and (max-width: 880px){
+.idea__card {
+    max-width: 800px;
+    flex-direction: column;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 320px){
+.idea__card {
+    max-width: 300px;
+    padding: 20px 10px;
+    }   
+}

@@ -1,8 +1,8 @@
 .card__text-input_type_textarea {
   max-width: 330px;
   margin: 22px 0 34px 0;
-  color: black;
+  color: white;
 }
 .card__text-input_type_textarea::placeholder {
-  color: black;
+  color: white;
 }
