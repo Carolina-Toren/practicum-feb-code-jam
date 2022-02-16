@@ -1,20 +1,14 @@
 # practicum-feb-code-jam | Team - _Byte Me_
 
-![](/src/images/logo/logo-white.svg)
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
 **Table of Contents**
 
-[TOCM]
-
-[TOC]
-
-- [Team Members](#team-members)
+-[About the team](#about-the-team) -[About the App](#about-the-app) -[Technologies and Standards Used in Frontend Development](#technologies-and-standards-used-in-frontend-development) -[Concepts that have been emphasized](#concepts-that-have-been-emphasized) -[Live Demo](#live-demo)
 
 # About the team
 
 ###[Carolina Toren](https://github.com/Carolina-Toren)
-
----
 
 Web Developer Student and Practical Software engineer, from Israel
 
