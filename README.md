@@ -63,7 +63,7 @@ In this app you can crate a playlist from a list of love songs that we carfully 
 
 # Live Demo
 
-Enjoy the live web app [here](https://carolina-toren.github.io/practicum-feb-code-jam/).
+Enjoy the live web app [here](https://carolina-toren.github.io/practicum-feb-code-jam/index.html).
 
 ```
 
