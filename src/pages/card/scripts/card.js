@@ -25,6 +25,8 @@ import {
 import * as utils from "./utils/utils.js";
 import FormValidator from "./components/FormValidator.js";
 
+// each of the popups gets an event listener that closes any opened popup and enables the close button to trigger the same event
+
 popups.forEach((popup) => {
   popup.addEventListener("mousedown", (evt) => {
     if (evt.target.classList.contains("card-popup_opened")) {
@@ -35,6 +37,8 @@ popups.forEach((popup) => {
     }
   });
 });
+
+// each option from the array of images gets appended to the popup and once in the popup it gets an event listener that triggers the card and button in the constructor to take the same background image as the one clicked on in the popup
 
 backgroundOptions.forEach((option) => {
   const backgroundItem = document.createElement("li");
@@ -47,9 +51,14 @@ backgroundOptions.forEach((option) => {
   popupCardGrid.append(backgroundItem);
 });
 
+// remove the parent element of the clicked delete button
+
 function handleDeleteButton(evt) {
   evt.target.closest(".card-item").remove();
 }
+
+// on clicking the edit button all the information (text content, colours, fonts) of the card item gets transferred to the card constructor to be edited ano/or saved
+
 function handleEditButton(evt) {
   addCardFormValidator.resetFormOnEdit();
 
@@ -71,6 +80,9 @@ function handleEditButton(evt) {
 
   editCard.remove();
 }
+
+// on clicking the download the external library capabilities are invoked
+
 function handleDownloadButton() {
   domtoimage
     .toPng(document.getElementById("my-node"), { quality: 0.95 })
@@ -84,6 +96,8 @@ function handleDownloadButton() {
       console.error("oops, something went wrong!", error);
     });
 }
+
+// a function returns a card element that takes all the information from the form inputs (card constructor) and displays it using the cloned markup element
 
 const addCard = ({
   background,
@@ -124,11 +138,17 @@ const addCard = ({
   return cardElement;
 };
 
+// the card element gets prepended to the designated grid display
+
 const attachCard = (card) => {
   cardGrid.prepend(addCard(card));
 };
 
+// the two initial card samples are prepended to the designated grid display to give the user an idea of the constructor capabilities
+
 initialCards.forEach(attachCard);
+
+// all the data from form inputs gets stored in card const that then is passed to addCard function that creates the card using template cloning
 
 function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
@@ -150,8 +170,12 @@ function handleAddCardFormSubmit(evt) {
   addCardFormValidator.resetFormOnSubmit();
 }
 
+// the form gets validated by creating a new instance of class and then applying the public method of the class
+
 const addCardFormValidator = new FormValidator(config, addCardFormElement);
 addCardFormValidator.enableValidation();
+
+// on clicking any card's preview/download button the information from the card item is dispalyed in the  popup card and shows tha card as it will look for download
 
 function openPreviewCardPopup(evt) {
   utils.openPopup(cardPreviewPopup);
@@ -178,6 +202,8 @@ function openPreviewCardPopup(evt) {
   popupMessage.style.color = currentMessage.style.color;
   popupFrom.style.color = currentFrom.style.color;
 }
+
+// add event listeners
 
 backgroundButton.addEventListener("click", () =>
   utils.openPopup(backgroundPopup)
