@@ -72,13 +72,11 @@ function handleEditButton(evt) {
   editCard.remove();
 }
 function handleDownloadButton() {
-  domtoimage.toPng(node);
-  var node = document.getElementById("my-node");
   domtoimage
-    .toJpeg(document.getElementById("my-node"), { quality: 0.95 })
+    .toPng(document.getElementById("my-node"), { quality: 0.95 })
     .then(function (dataUrl) {
       var link = document.createElement("a");
-      link.download = "my-image-name.jpeg";
+      link.download = "area-chart.png";
       link.href = dataUrl;
       link.click();
     })
