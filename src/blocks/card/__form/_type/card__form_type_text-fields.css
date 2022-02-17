@@ -10,3 +10,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 740px) {
+  .card__form_type_text-fields {
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+}

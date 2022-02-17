@@ -7,3 +7,9 @@
   grid-auto-rows: 400px;
   grid-gap: 75px;
 }
+
+@media screen and (max-width: 900px) {
+  .card__card-grid {
+    grid-template-columns: repeat(auto-fit, 400px);
+  }
+}
