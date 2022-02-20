@@ -9,30 +9,48 @@
   <body class="page">
     <header class="header">
       <a class="header__logo-link" href="../../../index.html">
-        <img class="header__logo" src="../../images/logo/logo-black.svg" alt="human heart logo"
+        <img
+          class="header__logo"
+          src="../../images/logo/logo-black.svg"
+          alt="human heart logo"
       /></a>
       <div class="header__container">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="../../../index.html">Ideas for the day</a>
+              <a class="nav__link" href="../../../index.html"
+                >Ideas for the day</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="../playlist/playlist.html">Our special playlist</a>
+              <a class="nav__link" href="../playlist/playlist.html"
+                >Our special playlist</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link_active" href="card.html">Make a card </a>
+              <a class="nav__link nav__link_active" href="card.html"
+                >Make a card
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <h1 class="main__title">This Valentine&#39;s Day let the people that matter know you are thinking about them</h1>
+      <h1 class="main__title">
+        This Valentine&#39;s Day let the people that matter know you are
+        thinking about them
+      </h1>
       <section class="card">
         <div class="card__constructor">
           <h2 class="card__title">Customize your card</h2>
-          <form name="form" class="card__form" action="#" method="get" novalidate>
+          <form
+            name="form"
+            class="card__form"
+            action="#"
+            method="get"
+            novalidate
+          >
             <div class="card__form card__form_type_text-fields">
               <input
                 class="card__text-input card__text-input_type_to"
@@ -73,36 +91,101 @@
               <ul class="card__options">
                 <li class="card__option">
                   <p class="card__label">Background:</p>
-                  <button type="button" class="card__background-button"></button>
+                  <button
+                    type="button"
+                    class="card__background-button"
+                  ></button>
                 </li>
 
                 <li class="card__option">
                   <label class="card__label" for="to-picker">To:</label>
-                  <input class="card__colour-input" type="color" id="to-picker" name="to-picker" value="#DF1E6F" />
+                  <input
+                    class="card__colour-input"
+                    type="color"
+                    id="to-picker"
+                    name="to-picker"
+                    value="#DF1E6F"
+                  />
                 </li>
                 <li class="card__option">
-                  <label class="card__label" for="text-picker">Text colour:</label>
-                  <input class="card__colour-input" type="color" id="text-picker" name="text-picker" value="#FFFFFF" />
+                  <label class="card__label" for="text-picker"
+                    >Text colour:</label
+                  >
+                  <input
+                    class="card__colour-input"
+                    type="color"
+                    id="text-picker"
+                    name="text-picker"
+                    value="#FFFFFF"
+                  />
                 </li>
                 <li class="card__option">
                   <label class="card__label" for="from-picker">From:</label>
-                  <input class="card__colour-input" type="color" id="from-picker" name="from-picker" value="#DF1E6F" />
+                  <input
+                    class="card__colour-input"
+                    type="color"
+                    id="from-picker"
+                    name="from-picker"
+                    value="#DF1E6F"
+                  />
                 </li>
 
                 <li class="card__option">
                   <label class="card__label" for="fonts">Font:</label>
                   <select class="card__font" id="fonts" name="fonts">
-                    <option class="card__font card__font_type_handwriting" value="Niconne">Handwriting</option>
-                    <option class="card__font card__font_type_serious" value="Baskervville">Serious</option>
-                    <option class="card__font card__font_type_lighthearted" value="Indie Flower">Lighthearted</option>
-                    <option class="card__font card__font_type_bloody" value="Creepster">Bloody</option>
-                    <option class="card__font card__font_type_romantic" value="Allura">Romantic</option>
-                    <option class="card__font card__font_type_friends" value="Sora" selected>Friends</option>
-                    <option class="card__font card__font_type_family" value="Manrope">Family</option>
+                    <option
+                      class="card__font card__font_type_handwriting"
+                      value="Niconne"
+                    >
+                      Handwriting
+                    </option>
+                    <option
+                      class="card__font card__font_type_serious"
+                      value="Baskervville"
+                    >
+                      Serious
+                    </option>
+                    <option
+                      class="card__font card__font_type_lighthearted"
+                      value="Indie Flower"
+                    >
+                      Lighthearted
+                    </option>
+                    <option
+                      class="card__font card__font_type_bloody"
+                      value="Creepster"
+                    >
+                      Bloody
+                    </option>
+                    <option
+                      class="card__font card__font_type_romantic"
+                      value="Allura"
+                    >
+                      Romantic
+                    </option>
+                    <option
+                      class="card__font card__font_type_friends"
+                      value="Sora"
+                      selected
+                    >
+                      Friends
+                    </option>
+                    <option
+                      class="card__font card__font_type_family"
+                      value="Manrope"
+                    >
+                      Family
+                    </option>
                   </select>
                 </li>
               </ul>
-              <button disabled class="card__submit-button card__submit-button_disabled" type="submit">Add card</button>
+              <button
+                disabled
+                class="card__submit-button card__submit-button_disabled"
+                type="submit"
+              >
+                Add card
+              </button>
             </div>
           </form>
         </div>
@@ -114,9 +197,21 @@
     <template id="card-item">
       <div class="card-item">
         <div class="card-item__overlay"></div>
-        <button type="button" class="card-item__button card-item__button_type_edit" aria-label="edit"></button>
-        <button type="button" class="card-item__button card-item__button_type_delete" aria-label="delete"></button>
-        <button type="button" class="card-item__button card-item__button_type_download" aria-label="zoom"></button>
+        <button
+          type="button"
+          class="card-item__button card-item__button_type_edit"
+          aria-label="edit"
+        ></button>
+        <button
+          type="button"
+          class="card-item__button card-item__button_type_delete"
+          aria-label="delete"
+        ></button>
+        <button
+          type="button"
+          class="card-item__button card-item__button_type_download"
+          aria-label="zoom"
+        ></button>
         <h2 class="card-item__text card-item__text_type__to"></h2>
         <p class="card-item__text card-item__text_type__message"></p>
         <h3 class="card-item__text card-item__text_type__from"></h3>
@@ -124,13 +219,23 @@
     </template>
     <div class="card-popup card-popup_type_background-options">
       <div class="card-popup__container">
-        <button type="button" class="card-popup__button card-popup__button_type_close" aria-label="close"></button>
+        <button
+          type="button"
+          class="card-popup__button card-popup__button_type_close"
+          aria-label="close"
+        ></button>
         <ul class="card-popup__backgrounds-grid"></ul>
       </div>
     </div>
     <div class="card-popup card-popup_type_card-preview">
-      <div class="card-popup__container card-popup__container_location_card-preview">
-        <button type="button" class="card-popup__button card-popup__button_type_close" aria-label="close"></button>
+      <div
+        class="card-popup__container card-popup__container_location_card-preview"
+      >
+        <button
+          type="button"
+          class="card-popup__button card-popup__button_type_close"
+          aria-label="close"
+        ></button>
         <button
           type="button"
           class="card-popup__button card-popup__button_type_download"
@@ -155,30 +260,46 @@
                   <a class="footer__link" href="../index/index.html">Ideas</a>
                 </li>
                 <li>
-                  <a class="footer__link" href="../playlist/playlist.html">Playlist</a>
+                  <a class="footer__link" href="../playlist/playlist.html"
+                    >Playlist</a
+                  >
                 </li>
                 <li><a class="footer__link" href="card.html">Card </a></li>
               </ul>
             </nav>
           </div>
-          <img class="footer__logo" src="../../images/logo/logo-white.svg" alt="human heart logo" />
+          <img
+            class="footer__logo"
+            src="../../images/logo/logo-white.svg"
+            alt="human heart logo"
+          />
 
           <div class="footer__contact">
             <p class="footer__title">Contact Us</p>
             <ul class="footer__list">
               <li>
                 <a class="footer__link" href="#"
-                  ><img class="footer__social-icons" src="../../images/buttons/instagram.svg" alt="instagram icon"
+                  ><img
+                    class="footer__social-icons"
+                    src="../../images/buttons/instagram.svg"
+                    alt="instagram icon"
                 /></a>
               </li>
               <li>
                 <a class="footer__link" href="#"
-                  ><img class="footer__social-icons" src="../../images/buttons/facebook.svg" alt="facebook icon"
+                  ><img
+                    class="footer__social-icons"
+                    src="../../images/buttons/facebook.svg"
+                    alt="facebook icon"
                 /></a>
               </li>
               <li>
                 <a class="footer__link" href="#"
-                  ><img class="footer__social-icons" src="../../images/buttons/twitter.svg" alt="twitter icon" />
+                  ><img
+                    class="footer__social-icons"
+                    src="../../images/buttons/twitter.svg"
+                    alt="twitter icon"
+                  />
                 </a>
               </li>
             </ul>
